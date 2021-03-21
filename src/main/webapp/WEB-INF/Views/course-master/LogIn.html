@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<link rel="stylesheet" href="styles/modalStyles.css">
 </head>
 
 <body>
@@ -82,8 +83,27 @@
 								<button id="search_submit_button" type="submit" class="search_submit_button trans_200" value="Submit">Inicio de Sesión</button>
 							</form>
 						</div>
-						<br>
-						<button id="search_submit_button2" style="padding: 1px" type="submit" value="Submit">¿Olvidó la contraseña?</button>
+
+						<div class="page">
+							<a href="#" class="boton" id="btnabrir">¿Olvidó su contraseña?</a>
+						</div>
+
+						<div class="fondo_transparente">
+							<div class="modal">
+								<div class="modal_cerrar">
+									<span>x</span>
+								</div>
+								<div class="modal_titulo">Restauración de contraseña</div>
+									<div>
+										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;" id="correo_Recovery" class="input_field search_form_name" type="email" placeholder="Correo Electrónico" required="required" data-error="Campo requerido. Debe ingresar este campo.">
+										<a style="" href="#" class="boton">Enviar Código</a>
+										<br><br><br>
+										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;"; disabled="true" id="codigo_verificacion_Recovery" class="input_field search_form_name" type="number" placeholder="Código de verificación" required="required" data-error="Campo requerido. Debe ingresar este campo.">
+										<a href="#" class="boton enlace_desactivado">Validar</a>
+									</div>
+							</div>
+						</div>
+
 					</div>
 
 
@@ -136,6 +156,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/contact_custom.js"></script>
+<script>
+	document.getElementById("btnabrir").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente")[0].style.display="block"
+		return false
+	})
 
+	document.getElementById("btnabrir2").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente2")[0].style.display="block"
+		return false
+	})
+
+	document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente")[0].style.display="none"
+	})
+
+	document.getElementsByClassName("modal_cerrar2")[0].addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente2")[0].style.display="none"
+	})
+</script>
 </body>
 </html>
