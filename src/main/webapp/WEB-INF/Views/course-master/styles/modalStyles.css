@@ -20,6 +20,16 @@ body{
     display: none;
 }
 
+.fondo_transparente2{
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    display: none;
+}
+
 /*titulo del modal*/
 .modal{
     background: linear-gradient(0deg,white 70%, #DBCEC8 25%);
@@ -37,14 +47,46 @@ body{
     border-radius: 30px;
 }
 
+.modal2{
+    background: linear-gradient(0deg,white 85%, #DBCEC8 15%);
+    width: 600px;
+    height: 320px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #677c68;
+    border-radius: 30px;
+}
+
+
 .modal_cerrar{
     background: white;
     position: absolute;
-    right: -20px;
+    right: 10px;
     color: crimson;
-    top: -20px;
+    top: 10px;
     width: 40px;
-    height: 40px;
+    height: 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal_cerrar2{
+    background: white;
+    position: absolute;
+    right: 10px;
+    color: crimson;
+    top: 10px;
+    width: 40px;
+    height: 25px;
     border-radius: 25px;
     display: flex;
     justify-content: center;

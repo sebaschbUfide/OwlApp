@@ -95,12 +95,30 @@
 								</div>
 								<div class="modal_titulo">Restauración de contraseña</div>
 									<div>
-										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;" id="correo_Recovery" class="input_field search_form_name" type="email" placeholder="Correo Electrónico" required="required" data-error="Campo requerido. Debe ingresar este campo.">
-										<a style="" href="#" class="boton">Enviar Código</a>
+										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;" id="correo_Recovery"
+											   class="input_field search_form_name" type="email" placeholder="Correo Electrónico"
+											   required="required" data-error="Campo requerido. Debe ingresar este campo.">
+										<a href="#" id="btnabrir2" class="boton">Enviar Código</a>
 										<br><br><br>
-										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;"; disabled="true" id="codigo_verificacion_Recovery" class="input_field search_form_name" type="number" placeholder="Código de verificación" required="required" data-error="Campo requerido. Debe ingresar este campo.">
-										<a href="#" class="boton enlace_desactivado">Validar</a>
+										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;"; id="codigo_verificacion_Recovery"
+											   class="input_field search_form_name" type="number" placeholder="Código de verificación"
+											   required="required" data-error="Campo requerido. Debe ingresar este campo.">
+										<a href="#" class="boton" id="btnValidar">Validar</a>
 									</div>
+							</div>
+						</div>
+
+						<div class="fondo_transparente2">
+							<div class="modal2">
+								<div class="modal_cerrar2">
+									<span>x</span>
+								</div>
+								<div style="padding: 0 5% 0 5%">
+									<input id="password_recovery" class="input_field search_form_category" type="password" placeholder="Nueva contraseña">
+									<input style="margin-bottom: 5%" id="password_confirmation_recovery" class="input_field search_form_category"
+										   type="password" placeholder="Confirmación de la nueva contraseña">
+									<a style="" href="#" id="btnGuardarContraseña" class="boton">Registrar Nueva Contraseña</a>
+								</div>
 							</div>
 						</div>
 
@@ -162,18 +180,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		return false
 	})
 
-	document.getElementById("btnabrir2").addEventListener("click", function (){
-		document.getElementsByClassName("fondo_transparente2")[0].style.display="block"
-		return false
-	})
-
 	document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente")[0].style.display="none"
 	})
 
+	document.getElementById("btnValidar").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente2")[0].style.display="block"
+		document.getElementsByClassName("fondo_transparente")[0].style.display="none"
+		return false
+	})
+
 	document.getElementsByClassName("modal_cerrar2")[0].addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente2")[0].style.display="none"
+		document.getElementsByClassName("fondo_transparente")[0].style.display="block"
 	})
+
 </script>
 </body>
 </html>
