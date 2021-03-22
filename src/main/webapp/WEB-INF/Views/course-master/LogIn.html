@@ -35,21 +35,17 @@
 				</div>
 			</div>
 
-			<!-- Main Navigation -->
-			<nav class="main_nav_container">
-				<div class="main_nav">
-					<ul class="main_nav_list">
-						<div  align="left">
-							<li class="main_nav_item"><a href="index.html">Inicio</a></li>
-						</div>
-
-					</ul>
+			<div class="header_side d-flex flex-row justify-content-center align-items-center">
+				<div>
+					<li class="main_nav_item"><a href="index.html">Inicio</a></li>
 				</div>
-			</nav>
+			</div>
+
 		</div>
 
 		<div class="header_side d-flex flex-row justify-content-center align-items-center">
 			<div>
+
 				<li class="main_nav_item"><a href="SignUp.html">Registrarse</a></li>
 			</div>
 		</div>
@@ -77,7 +73,8 @@
 						<div class="search_content text-center">
 							<h1 class="search_title">Inicio de Sesión</h1>
 							<form id="search_form" class="search_form" action="post">
-								<input id="search_form_name" class="input_field search_form_name" type="email" placeholder="Correo Electrónico" required="required" data-error="Campo requerido. Debe ingresar este campo.">
+								<input id="search_form_name" class="input_field search_form_name" type="email" placeholder="Correo Electrónico"
+									   required="required" data-error="Campo requerido. Debe ingresar este campo.">
 								<input id="search_form_category" class="input_field search_form_category" type="password" placeholder="Contraseña">
 
 								<button id="search_submit_button" type="submit" class="search_submit_button trans_200" value="Submit">Inicio de Sesión</button>
@@ -88,6 +85,7 @@
 							<a href="#" class="boton" id="btnabrir">¿Olvidó su contraseña?</a>
 						</div>
 
+						<!-- Sección para ingresar el correo electrónico para enviar código de verificación -->
 						<div class="fondo_transparente">
 							<div class="modal">
 								<div class="modal_cerrar">
@@ -95,25 +93,41 @@
 								</div>
 								<div class="modal_titulo">Restauración de contraseña</div>
 									<div>
-										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;" id="correo_Recovery"
-											   class="input_field search_form_name" type="email" placeholder="Correo Electrónico"
-											   required="required" data-error="Campo requerido. Debe ingresar este campo.">
-										<a href="#" id="btnabrir2" class="boton">Enviar Código</a>
-										<br><br><br>
-										<input style="margin-bottom: 5%; border: 1px solid #DBCEC8;"; id="codigo_verificacion_Recovery"
-											   class="input_field search_form_name" type="number" placeholder="Código de verificación"
-											   required="required" data-error="Campo requerido. Debe ingresar este campo.">
-										<a href="#" class="boton" id="btnValidar">Validar</a>
+										<div id="first" style="margin-bottom: 2%">
+											<input style="margin-bottom: 8%;" id="correo_Recovery"
+												   class="input_field search_form_name" type="email" placeholder="Correo Electrónico"
+												   required="required" data-error="Campo requerido. Debe ingresar este campo.">
+											<a href="#" id="btnEnviarCorreo" class="boton">Enviar Código</a>
+											<a href="#" class="enlace_reenviar" id="btnReenviarCorreo" >Reenviar Código</a>
+										</div>
 									</div>
 							</div>
 						</div>
 
+						<!-- Sección para ingresar el código de verificación recibido en el correo -->
+						<div class="fondo_transparente1">
+							<div class="modal1">
+								<div class="modal_cerrar1">
+									<span>x</span>
+								</div>
+								<div class="modal_titulo">Ingrese Código de Verificación</div>
+								<div style="margin-bottom: 5%">
+									<input style="margin-bottom: 8%"; id="codigo_verificacion_Recovery"
+										   class="input_field search_form_name" type="number" placeholder="Código de verificación"
+										   required="required" data-error="Campo requerido. Debe ingresar este campo.">
+									<a href="#" class="boton" id="btnValidar">Validar</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Sección para registrar una nueva contraseña -->
 						<div class="fondo_transparente2">
 							<div class="modal2">
 								<div class="modal_cerrar2">
 									<span>x</span>
 								</div>
-								<div style="padding: 0 5% 0 5%">
+								<div class="modal_titulo">Registre su nueva contraseña</div>
+								<div style="padding: 0 5% 0 5%; margin-bottom: 2%">
 									<input id="password_recovery" class="input_field search_form_category" type="password" placeholder="Nueva contraseña">
 									<input style="margin-bottom: 5%" id="password_confirmation_recovery" class="input_field search_form_category"
 										   type="password" placeholder="Confirmación de la nueva contraseña">
@@ -175,24 +189,34 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/easing/easing.js"></script>
 <script src="js/contact_custom.js"></script>
 <script>
+
 	document.getElementById("btnabrir").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente")[0].style.display="block"
 		return false
 	})
-
 	document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente")[0].style.display="none"
 	})
 
+	document.getElementById("btnEnviarCorreo").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente1")[0].style.display="block"
+		document.getElementsByClassName("fondo_transparente")[0].style.display="none"
+		return false
+	})
+	document.getElementsByClassName("modal_cerrar1")[0].addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente1")[0].style.display="none"
+		document.getElementsByClassName("fondo_transparente")[0].style.display="block"
+	})
+
 	document.getElementById("btnValidar").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente2")[0].style.display="block"
-		document.getElementsByClassName("fondo_transparente")[0].style.display="none"
+		document.getElementsByClassName("fondo_transparente1")[0].style.display="none"
 		return false
 	})
 
 	document.getElementsByClassName("modal_cerrar2")[0].addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente2")[0].style.display="none"
-		document.getElementsByClassName("fondo_transparente")[0].style.display="block"
+		document.getElementsByClassName("fondo_transparente1")[0].style.display="block"
 	})
 
 </script>

@@ -1111,7 +1111,7 @@ input:last-of-type
 .input_field:focus
 {
 	outline: none !important;
-	border: solid 2px #ffb606;
+	border: solid 2px #677c68;
 }
 .search_submit_button
 {
