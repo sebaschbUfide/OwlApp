@@ -60,6 +60,17 @@ body{
     display: none;
 }
 
+.fondo_transparente5{
+    top: 10%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    display: none;
+}
+
+
 /*titulo del modal*/
 .modal{
     background: linear-gradient(0deg,whitesmoke 75%, #DBCEC8 25%);
@@ -129,7 +140,22 @@ body{
 .modal4{
     background: linear-gradient(0deg,white 80%, #677c68 20%);
     width: 600px;
-    height: 320px;
+    height: 200px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #DBCEC8;
+    border-radius: 30px;
+}
+.modal5{
+    background: linear-gradient(0deg,white 70%, #677c68 30%);
+    width: 600px;
+    height: 185px;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -232,4 +258,21 @@ body{
 .enlace_reenviar:hover{
     color: #677c68;
     border:1px solid #DBCEC8;
+}
+
+
+
+
+.enlace_info_pago{
+    color: #677c68;
+    padding: 3px;
+    border-radius: 25px;
+    border:1px solid #677c68;
+    margin-left: 2%;
+}
+
+.enlace_info_pago:hover{
+    color: #677c68;
+    background-color: #DBCEC8;
+    border:1px solid #677c68;
 }

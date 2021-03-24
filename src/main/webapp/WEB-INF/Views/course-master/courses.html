@@ -8,6 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 	<link rel="stylesheet" href="styles/modalStyles.css">
@@ -57,7 +62,7 @@
 			<div>
 				<li class="main_nav_item"><a href="LogIn.html"><i class="fas fa-sign-out-alt"></i>  Cerrar Sesion</a></li>
 				<hr>
-				<li class="main_nav_item"><a href="SignUp.html"><i class="fa fa-user"></i>
+				<li class="main_nav_item"><a href="#"><i class="fa fa-user"></i>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mi perfil</a></li>
 			</div>
 		</div>
@@ -85,7 +90,7 @@
 						<div class="search_content text-center">
 							<h1 class="search_title">Cursos Disponibles</h1>
 
-							<table class="table" style="color: black">
+							<table class="table table-responsive" style="background-color: rgba(0,0,0,20%); color: #677c68">
 								<thead>
 								<tr>
 									<th scope="col">Id</th>
@@ -96,31 +101,36 @@
 								</thead>
 								<tbody>
 								<tr>
-									<th scope="row">1</th>
+									<th scope="row" id="head1">1</th>
 									<td id="uno">Intermedio <br> Lunes (6:00 p.m. a 9:00 p.m.)</td>
 									<td>
 										<a href="#" id="btnMatricula" class="boton test">Matricular</a>
-										<p id="matricula1" style="display: none">Cupo Reservado</p>
+										<p id="matricula1" style="display: none; color: #677c68">Cupo Reservado</p>
+										<a href="#" style="display: none" id="mat1" class="mat2 enlace_info_pago">Información de pago</a>
 									</td>
 									<td>
 										<a href="#" id="btnVer" class="boton">+</a>
 									</td>
 								</tr>
 								<tr>
-									<th scope="row">1</th>
+									<th scope="row" id="head2">2</th>
 									<td id="dos">Intermedio <br> Martes (6:00 p.m. a 9:00 p.m.)</td>
 									<td>
 										<a href="#" id="btnMatricula2" class="boton test">Matricular</a>
+										<p id="matricula2" style="display: none; color: #677c68">Cupo Reservado</p>
+										<a href="#" style="display: none" id="mat2" class="mat2 enlace_info_pago">Información de pago</a>
 									</td>
 									<td>
 										<a href="#" id="btnVer2" class="boton">+</a>
 									</td>
 								</tr>
 								<tr>
-									<th scope="row">1</th>
+									<th scope="row" id="head3">3</th>
 									<td id="tres">Principiante <br> Sábado (8:00 a.m. a 11:00 a.m.)</td>
 									<td>
 										<a href="#" id="btnMatricula3" class="boton test">Matricular</a>
+										<p id="matricula3" style="display: none; color: #677c68">Cupo Reservado</p>
+										<a href="#" style="display: none" id="mat3" class="mat2 enlace_info_pago">Información de pago</a>
 									</td>
 									<td>
 										<a href="#" id="btnVer3" class="boton">+</a>
@@ -163,14 +173,28 @@
 									<div class="modal_cerrar">
 										<span>x</span>
 									</div>
-									<div class="modal_titulo">Matricula de Curso</div>
+									<div class="modal_titulo" id="tituloMatricula"></div>
 									<div>
-										<div id="seccond">
-											<p>Se ha reservado su cupo por 24 horas.
+										<div id="seccond" style="margin-bottom: 5%">
+											<p>Se reservará su cupo por 24 horas.
 												<br>La matricula de este curso será válida hasta que se verifique el pago.</p>
-											<p>Números de cuenta:
-												<br>Banco Nacional: CR123456789
-												<br>Banco de Costa Rica: CR987654321
+											<a href="#" id="btnConfirmaMatricula" class="boton">Confirmar Matrícula</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Sección para reservar cupo del curso -->
+							<div class="fondo_transparente5">
+								<div class="modal5">
+									<div class="modal_cerrar">
+										<span>x</span>
+									</div>
+									<div class="modal_titulo">Métodos de Pago</div>
+									<div>
+										<div id="third" style="margin-bottom: 1%">
+											<p>Banco de Costa Rica: CR9098706540321
+												<br>Banco Nacional: CR1012304560789
 												<br>Sinpe Móvil: 87654321</p>
 										</div>
 									</div>
@@ -244,7 +268,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		document.getElementById("descripcion").innerHTML='Curso de nivel intermedio.'
 		return false
 	})
-
 	document.getElementById("btnVer2").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente3")[0].style.display="block"
 		document.getElementById("titulo").innerHTML=dos.innerHTML
@@ -252,7 +275,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		document.getElementById("descripcion").innerHTML='Curso de nivel intermedio.'
 		return false
 	})
-
 	document.getElementById("btnVer3").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente3")[0].style.display="block"
 		document.getElementById("titulo").innerHTML=tres.innerHTML
@@ -266,23 +288,67 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	})
 
 
+
+	var head1 = document.getElementById("head1");
+	var head2 = document.getElementById("head2");
+	var head3 = document.getElementById("head3");
+
 	//MÉTODOS DEL MODAL DE LA MATRICULA
 	document.getElementById("btnMatricula").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente4")[0].style.display="block"
-		document.getElementById("btnMatricula").style.display="none"
-		document.getElementById("matricula1").style.display="block"
+		document.getElementById("tituloMatricula").innerHTML= "Matricula Curso: "+ head1.innerHTML
 		return false
 	})
 	document.getElementById("btnMatricula2").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente4")[0].style.display="block"
+		document.getElementById("tituloMatricula").innerHTML= "Matricula Curso: "+ head2.innerHTML
 		return false
 	})
 	document.getElementById("btnMatricula3").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente4")[0].style.display="block"
+		document.getElementById("tituloMatricula").innerHTML= "Matricula Curso: "+ head3.innerHTML
 		return false
 	})
+
 	document.getElementsByClassName("modal_cerrar")[1].addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente4")[0].style.display="none"
+	})
+
+
+	document.getElementById("btnConfirmaMatricula").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente4")[0].style.display="none"
+		if(document.getElementById("tituloMatricula").innerHTML=="Matricula Curso: "+ head1.innerHTML){
+			document.getElementById("btnMatricula").style.display="none"
+			document.getElementById("matricula1").style.display="block"
+			document.getElementById("mat1").style.display="block"
+		}else if(document.getElementById("tituloMatricula").innerHTML=="Matricula Curso: "+ head2.innerHTML){
+			document.getElementById("btnMatricula2").style.display="none"
+			document.getElementById("matricula2").style.display="block"
+			document.getElementById("mat2").style.display="block"
+		}else{
+			document.getElementById("btnMatricula3").style.display="none"
+			document.getElementById("matricula3").style.display="block"
+			document.getElementById("mat3").style.display="block"
+		}
+		return false
+	})
+
+
+	document.getElementById("mat1").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente5")[0].style.display="block"
+		return false
+	})
+		document.getElementById("mat2").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente5")[0].style.display="block"
+		return false
+	})
+		document.getElementById("mat3").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente5")[0].style.display="block"
+		return false
+	})
+
+	document.getElementsByClassName("modal_cerrar")[2].addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente5")[0].style.display="none"
 	})
 
 </script>
