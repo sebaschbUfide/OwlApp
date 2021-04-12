@@ -1,8 +1,8 @@
 # Owl Learning App
 
-
-
-
+<p align="center">
+<img src="https://github.com/sebaschbUfide/OwlApp/blob/9f9d188e7907fa1e53b96f4db5c81e2fbad94f21/src/main/webapp/WEB-INF/Views/course-master/images/Owl.jpg" width="350" heigth="350" hover="Owl">
+</p>
 
 #                                                                     Integrantes 
  
@@ -28,6 +28,13 @@ La modalidad virtual en la educación hoy en día se ha convertido en una herram
  Para mas informacion puedes visitar: https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html
  
  # Repositorio
+ 
+ # Git Hub Desktop
+ Descargar la aplicacion de Github, una vez descargada e instalada, nos dirigimos al de tab de Code del repositorio y elegimos la opcion de 
+ 
+ 
+ 
+ 
  
  
   
