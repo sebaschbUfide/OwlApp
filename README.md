@@ -30,11 +30,12 @@ La modalidad virtual en la educación hoy en día se ha convertido en una herram
  # Repositorio
  
  # Git Hub Desktop
- Descargar la aplicacion de Github, una vez descargada e instalada, nos dirigimos al de tab de Code del repositorio y elegimos la opcion de 
+ Descargar la aplicacion de Github, una vez descargada e instalada, nos dirigimos al de tab de Code del repositorio y elegimos la opcion de Abrir con la aplicacion de escritorio
  
- 
- 
- 
+ ![image](https://user-images.githubusercontent.com/68712159/114331174-b2fa8580-9b00-11eb-9e3f-7b459676549c.png)
+  
+  Permite a tu Buscador abir la aplicacion y selecciona Clonar en la carpeta de conveniencia.
+
  
  
   
