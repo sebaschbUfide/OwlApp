@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Level Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Course Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/modalStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="super_container" style="background: #DBCEC8;">
+
+    <!-- Header -->
+    <header class="header d-flex flex-row">
+        <div class="header_content d-flex flex-row align-items-center">
+            <!-- Logo -->
+            <div class="logo_container">
+                <div class="logo">
+                    <video autoplay muted width="175" height="175">
+                        <source src="images/Logo_Anim_Prueba1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main_nav_container">
+                <div class="main_nav">
+                    <ul class="main_nav_list">
+                        <div  align="right">
+                            <li class="main_nav_item"><a href="index.html">Inicio</a></li>
+                            <li class="main_nav_item"><a href="#">Acerca de Nosotros</a></li>
+                            <li class="main_nav_item"><a href="courses.html">Cursos</a></li>
+                            <li class="main_nav_item"><a href="elements.html">Recursos</a></li>
+                            <li class="main_nav_item"><a href="contact.html">contacto</a></li>
+                        </div>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_side d-flex flex-row justify-content-center align-items-center">
+            <div>
+                <li class="main_nav_item"><a href="LogIn.html"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Iniciar Sesion</a></li>
+                <hr>
+                <li class="main_nav_item"><a href="SignUp.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrarse</a></li>
+            </div>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger_container">
+            <i class="fas fa-bars trans_200"></i>
+        </div>
+
+    </header>
+
+    <!-- Start Level Test-->
+    <div class="register" id="principalUno" style="display: block">
+
+        <div class="container-fluid">
+
+            <div class="row row-eq-height">
+
+                <div class="col-lg-12 nopadding">
+
+                    <!-- Search -->
+
+                    <div class="search_section d-flex flex-column align-items-center justify-content-center" id="Part1" style="margin-top: 15%">
+                        <div class="search_background" style="background-image:url(images/Owl.jpg);"></div>
+                        <div class="search_content text-center">
+
+                            <h1 class="search_title">Prueba de Nivelación de Inglés</h1>
+                            <br>
+                            <table class="table table-responsive" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+                                <thead>
+                                <tr>
+                                    <th scope="col" style="text-align: justify">
+                                        En esta prueba se le presentarán una serie de 30 preguntas realizadas
+                                        estrátegicamente para medir su nivel de inglés, por profesores especializados en la materia.<br><br>
+                                        Cada una de las preguntas tendrá 4 posibles respuestas, de las cuales, solo una será la correcta.<br><br>
+                                        Podrá avanzar a la siguiente pregunta y retroceder a la anterior con los botones que se le presentan
+                                        debajo de las respuestas en la sección de navegación.
+                                    </th>
+                                </tr>
+                                </thead>
+                            </table>
+
+
+                            <div class="page">
+
+                                <a href="#" class="boton" id="btnIniciaPrueba">Iniciar Prueba</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="register" id="principalDos" style="display:none;">
+
+        <div class="container-fluid">
+
+            <div class="row row-eq-height">
+
+                <div class="col-lg-12 nopadding">
+
+                    <!-- Search -->
+
+                    <div class="search_section d-flex flex-column align-items-center justify-content-center" style="margin-top: 15%">
+                        <div class="search_background" style="background-image:url(images/Owl.jpg);"></div>
+                        <div class="search_content text-center">
+
+                            <h1 class="search_title">Prueba de Nivelación de Inglés</h1>
+                            <br>
+
+                            <div style="border: 2px solid #677c68; padding: 1px;">
+                                <h4 class="search_title">Pregunta #</h4> <h4 id="questionIndex" class="search_title">1</h4>
+                            </div>
+
+                            <br>
+
+                            <div style="text-align: left;">
+                                <div>
+                                    <input type="radio" id="answer1" name="answers" value="answer1"
+                                           checked>
+                                    <label for="answer1">Respuesta 1</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="answer2" name="answers" value="answer2">
+                                    <label for="answer2">Respuesta 2</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="answer4" name="answers" value="answer4">
+                                    <label for="answer4">Respuesta 3</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="answer3" name="answers" value="answer3">
+                                    <label for="answer3">Respuesta 4</label>
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <div style="border: 2px solid #677c68; ">
+                                <h3>Navegación</h3>
+                                <div class="page">
+                                    <a href="#" class="boton" id="btnBackward" style="margin-right: 50px">Anterior</a>
+                                    <a href="#" class="boton" id="btnForward" style="margin-left: 50px">Siguiente</a>
+                                </div>
+                            </div>
+
+                            <div class="page" style="margin-top: 10px">
+                                <a href="index.html" class="boton" id="btnEndTest" style="margin-right: 50px">Finalizar Prueba</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Footer Content -->
+
+            <div class="footer_content">
+
+            </div>
+
+            <!-- Footer Copyright -->
+
+            <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+                <div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> </span>
+                </div>
+                <div class="footer_social ml-sm-auto">
+                    <ul class="menu_social">
+                        <li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/courses_custom.js"></script>
+
+<script>
+    document.getElementById("btnIniciaPrueba").addEventListener("click", function (){
+        document.getElementById("principalUno").style.display="none"
+        document.getElementById("principalDos").style.display="block"
+        return false
+    })
+
+
+
+    document.getElementById("btnForward").addEventListener("click", function (){
+        var questionId = parseInt(document.getElementById("questionIndex").innerHTML)
+        if(questionId<30) {
+            document.getElementById("questionIndex").innerHTML = questionId + 1
+        }
+        return false
+    })
+
+    document.getElementById("btnBackward").addEventListener("click", function (){
+        var questionId = parseInt(document.getElementById("questionIndex").innerHTML)
+        if(questionId>1){
+            document.getElementById("questionIndex").innerHTML= questionId - 1
+        }
+        return false
+    })
+
+</script>
+
+</body>
+</html>

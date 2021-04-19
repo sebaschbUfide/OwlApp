@@ -16,8 +16,4 @@ public class OwlAppApplication {
 		SpringApplication.run(OwlAppApplication.class, args);
 	}
 
-
-1
-
-
 }
