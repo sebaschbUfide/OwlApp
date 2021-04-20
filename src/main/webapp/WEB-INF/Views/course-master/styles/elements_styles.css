@@ -123,14 +123,14 @@ p::selection
 	background: #A3B898;
 	color: #A3B898;
 }
-h1{font-size: 36px;}
+h1{font-size: 120px;}
 h2{font-size: 22px;}
 h3{font-size: 18px;}
 h4{font-size: 14px;}
 h5{font-size: 11px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: Cellestial;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -668,7 +668,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: #DBCEC8;
+	background: #EAD1C5;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -676,7 +676,7 @@ section
 }
 .home_content h1
 {
-	font-size: 72px;
+	font-size: 200px;
 	font-weight: 400;
 	color: #677c68;
 	line-height: 0.5;
