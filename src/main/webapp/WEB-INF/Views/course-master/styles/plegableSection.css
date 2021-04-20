@@ -1,0 +1,37 @@
+.dropdownMenu{
+    width: 100%;
+}
+.title{
+    background-color: #677c68;
+    color: white;
+    border:1px solid #DBCEC8;
+}
+.title:hover{
+    background-color: #DBCEC8;
+}
+.dropdownButton:hover{
+    cursor: pointer;
+}
+.dropdownButton > p .fa{
+    float: right;
+}
+.dropdownContent ul{
+    margin: 0;
+}
+.dropdownContent,
+.dropdownButton{
+    border: 1px solid #994b4b;
+}
+.dropdownContent{
+    padding: 15px 8px;
+    background-color: #fff;
+    margin-top: -1px;
+}
+
+.tittle_text{
+    color: #DBCEC8;
+}
+
+.tittle_text:hover{
+    color: #677c68;
+}

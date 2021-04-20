@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Página Principal Profesor</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="styles/plegableSection.css">
+	<link rel="stylesheet" href="styles/modalStyles.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/menu-acordeon.js"></script>
+
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			<!-- Logo -->
+			<div class="logo_container">
+				<div class="logo">
+					<video autoplay muted width="175" height="175">
+						<source src="images/Logo_Anim_Prueba1.mp4" type="video/mp4">
+					</video>
+
+				</div>
+
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<div  align="right">
+						<li class="main_nav_item"><a href="#">Inicio</a></li>
+						<li class="main_nav_item"><a href="virtualTestAdmin.html.html">Creación de Pruebas</a></li>
+						<li class="main_nav_item"><a href="elements.html">Cursos</a></li>
+						</div>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<div>
+				<li class="main_nav_item"><a href="LogIn.html"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Cerrar Sesion</a></li>
+				<hr>
+				<li class="main_nav_item"><a href="SignUp.html"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mi Perfil</a></li>
+			</div>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+
+	<div class="register">
+
+		<div class="container-fluid">
+
+			<div class="row row-eq-height">
+
+				<div class="col-lg-12 nopadding">
+
+					<!-- Search -->
+
+					<div class="search_section d-flex flex-column align-items-center justify-content-center" style="margin-top: 15%">
+						<div class="search_background" ></div>
+						<div class="search_content text-center">
+
+							<div style="text-align: left">
+								<a href="#" class="boton edit">Crear Nueva Prueba</a>
+							</div>
+							<br><br>
+
+							<div class="dropdownMenu">
+								<div class="title dropdownButton">
+									<p class="tittle_text">Prueba 1 - Modulo 1 - Curso SC-603</p>
+								</div>
+								<div class="dropdownContent">
+
+									<table class="table table-responsive" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+										<thead>
+										<tr>
+											<th scope="col">Duración (min)</th>
+											<th scope="col">Cantidad de Preguntas</th>
+											<th scope="col">Dificultad</th>
+											<th scope="col">Estado</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>60</td>
+											<td>20</td>
+											<td>Medio</td>
+											<td>Activo</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<a href="#" class="boton edit">Editar</a>
+									<a href="#" class="boton delete">Remover</a>
+
+								</div>
+							</div>
+							<br>
+							<div class="dropdownMenu">
+								<div class="title dropdownButton">
+									<p class="tittle_text">Prueba 2 - Modulo 1 - Curso SC-603</p>
+								</div>
+								<div class="dropdownContent">
+									<table class="table table-responsive" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+										<thead>
+										<tr>
+											<th scope="col">Duración (min)</th>
+											<th scope="col">Cantidad de Preguntas</th>
+											<th scope="col">Dificultad</th>
+											<th scope="col">Estado</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>60</td>
+											<td>20</td>
+											<td>Medio</td>
+											<td>Activo</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<a href="#" class="boton edit">Editar</a>
+									<a href="#" class="boton delete">Remover</a>
+								</div>
+							</div>
+							<br>
+							<div class="dropdownMenu">
+								<div class="title dropdownButton">
+									<p class="tittle_text">Prueba 1 - Modulo 2 - Curso SC-603</p>
+								</div>
+								<div class="dropdownContent">
+									<table class="table table-responsive" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+										<thead>
+										<tr>
+											<th scope="col">Duración (min)</th>
+											<th scope="col">Cantidad de Preguntas</th>
+											<th scope="col">Dificultad</th>
+											<th scope="col">Estado</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>80</td>
+											<td>25</td>
+											<td>Medio</td>
+											<td>Activo</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<a href="#" class="boton edit">Editar</a>
+									<a href="#" class="boton delete">Remover</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Home -->
+
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>
