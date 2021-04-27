@@ -19,17 +19,17 @@
 
 <body>
 
-<div class="super_container" style="background: #DBCEC8;">
+<div class="super_container" style="background: #FFFFFF;">
 
 	<!-- Header -->
 
-	<header class="header d-flex flex-row">
+	<header class="header d-flex flex-row" style="height: 15%;">
 
 		<div class="header_content d-flex flex-row align-items-center">
 			<!-- Logo -->
 			<div class="logo_container">
 				<div class="logo">
-					<video autoplay muted width="175" height="175">
+					<video autoplay muted width="80" height="80">
 						<source src="images/Logo_Animado_OWL_LEARNING.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -58,7 +58,7 @@
 	</header>
 
 
-	<div class="register">
+	<div class="">
 
 		<div class="container-fluid">
 
@@ -68,23 +68,31 @@
 
 					<!-- Search -->
 
-					<div class="search_section d-flex flex-column align-items-center justify-content-center" style="margin-top: 17%">
-						<div class="search_background" style="background-image:url(images/Owl.jpg);"></div>
-						<div class="search_content text-center">
-							<h1 class="search_title" id="tittleLogIn">Inicio de Sesión</h1>
+					<div class="search_section d-flex flex-column align-items-center justify-content-center"
+						 style="margin-top: 9%;">
+
+						<div class="jumbotron" style="width: 35%; background-color: #fff; text-align: center; border: 2px solid #EAD1C5; border-radius: 20px;">
+
+							<img src="images/Owl_avanzado.jpeg" alt="..." width="40%" >
+
+							<h1 class="display-4" style="color: #677c68; margin-bottom: 30px;">Inicio de Sesión</h1>
+
 								<input id="txtEmail" class="input_field search_form_name" type="email" placeholder="Correo Electrónico"
-									   required="required" data-error="Campo requerido. Debe ingresar este campo.">
-								<input id="txtPass" class="input_field search_form_category" type="password" placeholder="Contraseña">
+									   required="required" style="width: 75%; border: 2px solid #677c68;">
+								<input id="txtPass" class="input_field search_form_category" type="password" placeholder="Contraseña"
+									   style="width: 75%; border: 2px solid #677c68;">
+
+							<div class="page">
+								<a href="#" style="width: 300px; text-align: center; margin-top: 50px" class="logInBtn" id="btnLogIn">
+									<i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Iniciar Sesión</a>
+							</div>
+
+							<div class="page" style="margin-top: 5%;">
+								<a href="#" class="logInBtn" id="btnabrir"><i class="fas fa-unlock-alt"></i>&nbsp;&nbsp;¿Olvidó su contraseña?</a>
+							</div>
 
 						</div>
 
-						<div class="page">
-							<a href="#" style="width: 300px; text-align: center;" class="boton" id="btnLogIn">Iniciar Sesión</a>
-						</div>
-
-						<div class="page">
-							<a href="#"class="boton" id="btnabrir">¿Olvidó su contraseña?</a>
-						</div>
 
 						<!-- Sección para ingresar el correo electrónico para enviar código de verificación -->
 						<div class="fondo_transparente">
@@ -112,7 +120,7 @@
 									<span>x</span>
 								</div>
 								<div class="modal_titulo">Ingrese Código de Verificación</div>
-								<div style="margin-bottom: 5%">
+								<div style="margin-bottom: 2%">
 									<input style="margin-bottom: 8%"; id="codigo_verificacion_Recovery"
 										   class="input_field search_form_name" type="number" placeholder="Código de verificación"
 										   required="required" data-error="Campo requerido. Debe ingresar este campo.">
@@ -132,13 +140,12 @@
 									<input id="password_recovery" class="input_field search_form_category" type="password" placeholder="Nueva contraseña">
 									<input style="margin-bottom: 5%" id="password_confirmation_recovery" class="input_field search_form_category"
 										   type="password" placeholder="Confirmación de la nueva contraseña">
-									<a style="" href="#" id="btnGuardarContraseña" class="boton">Registrar Nueva Contraseña</a>
+									<a style="" href="LogIn.html" id="btnGuardarContraseña" class="boton">Registrar Nueva Contraseña</a>
 								</div>
 							</div>
 						</div>
 
 					</div>
-
 
 				</div>
 			</div>

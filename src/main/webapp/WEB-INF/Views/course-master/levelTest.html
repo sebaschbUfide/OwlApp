@@ -19,10 +19,13 @@
     <link rel="stylesheet" href="styles/modalStyles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
 </head>
 <body>
 
-<div class="super_container" style="background: #DBCEC8;">
+<div class="super_container" style="background: #fff;">
 
     <!-- Header -->
     <header class="header d-flex flex-row">
@@ -30,8 +33,8 @@
             <!-- Logo -->
             <div class="logo_container">
                 <div class="logo">
-                    <video autoplay muted width="175" height="175">
-                        <source src="images/Logo_Anim_Prueba1.mp4" type="video/mp4">
+                    <video autoplay muted width="170" height="170">
+                        <source src="images/Logo_Animado_OWL_LEARNING.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -45,7 +48,7 @@
                             <li class="main_nav_item"><a href="index.html">Inicio</a></li>
                             <li class="main_nav_item"><a href="#">Acerca de Nosotros</a></li>
                             <li class="main_nav_item"><a href="courses.html">Cursos</a></li>
-                            <li class="main_nav_item"><a href="styles/elements.html">Recursos</a></li>
+                            <li class="main_nav_item"><a href="elements.html">Recursos</a></li>
                             <li class="main_nav_item"><a href="contact.html">contacto</a></li>
                         </div>
 
@@ -54,10 +57,14 @@
             </nav>
         </div>
         <div class="header_side d-flex flex-row justify-content-center align-items-center">
+            <li class="main_nav_item"><a href="levelTest.html">Prueba de Nivel</a></li>
+        </div>
+        <div class="header_side d-flex flex-row justify-content-center align-items-center">
             <div>
-                <li class="main_nav_item"><a href="LogIn.html"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Iniciar Sesion</a></li>
+                <li class="main_nav_item"><a href="LogIn.html"><i class="fas fa-sign-out-alt"></i>  Cerrar Sesion</a></li>
                 <hr>
-                <li class="main_nav_item"><a href="SignUp.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrarse</a></li>
+                <li class="main_nav_item"><a href="Profile.html"><i class="fa fa-user"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mi perfil</a></li>
             </div>
         </div>
 
@@ -68,134 +75,75 @@
 
     </header>
 
-    <!-- Start Level Test-->
-    <div class="register" id="principalUno" style="display: block">
+    <div class="services page_section" id="principalUno" style="margin-top: 13%;">
 
-        <div class="container-fluid">
+        <div class="container">
 
-            <div class="row row-eq-height">
-
-                <div class="col-lg-12 nopadding">
-
-                    <!-- Search -->
-
-                    <div class="search_section d-flex flex-column align-items-center justify-content-center" id="Part1" style="margin-top: 15%">
-                        <div class="search_background" style="background-image:url(images/Owl.jpg);"></div>
-                        <div class="search_content text-center">
-
-                            <h1 class="search_title" >Prueba de Nivelación de Inglés</h1>
-                            <br>
-                            <table class="table table-responsive" style="background-color: rgba(0,0,0,0.10); color: #677c68">
-                                <thead>
-                                <tr>
-                                    <th scope="col" style="text-align: justify">
-                                        En esta prueba se le presentarán una serie de 30 preguntas realizadas
-                                        estrátegicamente para medir su nivel de inglés, por profesores especializados en la materia.<br><br>
-                                        Cada una de las preguntas tendrá 4 posibles respuestas, de las cuales, solo una será la correcta.<br><br>
-                                        Podrá avanzar a la siguiente pregunta y retroceder a la anterior con los botones que se le presentan
-                                        debajo de las respuestas en la sección de navegación.
-                                    </th>
-                                </tr>
-                                </thead>
-                            </table>
-
-
-                            <div class="page">
-
-                                <a href="#" class="boton" id="btnIniciaPrueba">Iniciar Prueba</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <br>
-
-                </div>
+            <div class="text-center" >
+                <h1 style="font-family: Montserrat; color: #677c68">Prueba de Nivel</h1>
             </div>
+
+            <table class="table table-responsive" style="color: #677c68;">
+                <thead>
+                <tr>
+                    <th scope="col" style="text-align: justify; border-color: #677c68">
+                        En esta prueba se le presentarán una serie de 30 preguntas realizadas
+                        estrátegicamente para medir su nivel de inglés, por profesores especializados en la materia.<br><br>
+                        Cada una de las preguntas tendrá 4 posibles respuestas, de las cuales, solo una será la correcta.<br><br>
+                        Podrá avanzar a la siguiente pregunta y retroceder a la anterior con los botones que se le presentan
+                        debajo de las respuestas en la sección de navegación.
+                    </th>
+                </tr>
+                </thead>
+            </table>
+
+
+            <div class="page">
+
+                <a href="#" class="boton" id="btnIniciaPrueba">Iniciar Prueba</a>
+            </div>
+
         </div>
     </div>
 
-    <div class="register" id="principalDos" style="display:none;">
+    <div class="services page_section" id="principalDos" style="margin-top: 10%; display: none;">
 
-        <div class="container-fluid">
+        <div class="container">
 
-            <div class="row row-eq-height">
+            <p style="font-size: xxx-large; text-align: center; color: #677c68;">Prueba de Nivelación de Inglés</p>
 
-                <div class="col-lg-12 nopadding">
+            <hr color="#677c68">
+            <p style="font-size: larger; text-align: center; color: #677c68;">Pregunta No. 01</p>
 
-                    <!-- Search -->
+            <div style="text-align: center;">
 
-                    <div class="search_section d-flex flex-column align-items-center justify-content-center" style="margin-top: 15%">
-                        <div class="search_background" style="background-image:url(images/Owl.jpg);"></div>
-                        <div class="search_content text-center">
+                <a href="#" id="testSelected" class="answerBtn" style="margin-right: 10px;">Respuesta 1</a>
+                <a href="#" id="testSelected1" class="answerBtn" style="margin-right: 10px">Respuesta 2</a>
+                <a href="#" class="answerBtn" style="margin-right: 10px">Respuesta 3</a>
+                <a href="#" class="answerBtn" style="margin-right: 10px">Respuesta 4</a>
 
-                            <h1 class="search_title" style="font-size: 80px">Prueba de Nivelación de Inglés</h1>
-                            <br>
-
-                            <div style="border: 2px solid #677c68; padding: 1px;">
-                                <h4 class="search_title">Pregunta #</h4> <h4 id="questionIndex" class="search_title">1</h4>
-                            </div>
-
-                            <br>
-
-                            <div style="text-align: left;">
-                                <div>
-                                    <input type="radio" id="answer1" name="answers" value="answer1"
-                                           checked>
-                                    <label for="answer1">Respuesta 1</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" id="answer2" name="answers" value="answer2">
-                                    <label for="answer2">Respuesta 2</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" id="answer4" name="answers" value="answer4">
-                                    <label for="answer4">Respuesta 3</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" id="answer3" name="answers" value="answer3">
-                                    <label for="answer3">Respuesta 4</label>
-                                </div>
-
-                            </div>
-
-                            <br>
-
-                            <div style="border: 2px solid #677c68; ">
-                                <h3>Navegación</h3>
-                                <div class="page">
-                                    <a href="#" class="boton" id="btnBackward" style="margin-right: 50px">Anterior</a>
-                                    <a href="#" class="boton" id="btnForward" style="margin-left: 50px">Siguiente</a>
-                                </div>
-                            </div>
-
-                            <div class="page" style="margin-top: 10px">
-                                <a href="index.html" class="boton" id="btnEndTest" style="margin-right: 50px">Finalizar Prueba</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
             </div>
+
+            <br>
+
+            <hr color="#677c68">
+
+            <div>
+                <a style="float: left;" href="#" class="boton" id="btnBackward"><i class="fas fa-arrow-left"></i> &nbsp;&nbsp;&nbsp; Anterior </a>
+                <a style="float: right;" href="#" class="boton" id="btnForward"> Siguiente &nbsp;&nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="page" style="margin-top: 10%">
+                <a href="index.html" class="boton" id="btnEndTest">Finalizar Prueba &nbsp;&nbsp;&nbsp; <i class="fas fa-check-double"></i></a>
+            </div>
+
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
+
         <div class="container">
-
-            <!-- Footer Content -->
-
-            <div class="footer_content">
-
-            </div>
-
             <!-- Footer Copyright -->
 
             <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
@@ -212,6 +160,7 @@
             </div>
 
         </div>
+
     </footer>
 
 </div>
@@ -252,6 +201,7 @@
         }
         return false
     })
+
 
 </script>
 

@@ -8,20 +8,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/main_styles.css">
-	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
-	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
-	<link rel="stylesheet" href="styles/modalStyles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="styles/modalStyles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+
 </head>
 <body>
 
-<div class="super_container" style="background: #DBCEC8;">
+<div class="super_container" style="background: #fff;">
 
 	<!-- Header -->
 
@@ -30,12 +44,9 @@
 			<!-- Logo -->
 			<div class="logo_container">
 				<div class="logo">
-					<video autoplay muted width="175" height="175">
+					<video autoplay muted width="170" height="170">
 						<source src="images/Logo_Animado_OWL_LEARNING.mp4" type="video/mp4">
 					</video>
-
-
-
 				</div>
 
 			</div>
@@ -48,7 +59,7 @@
 							<li class="main_nav_item"><a href="index.html">Inicio</a></li>
 							<li class="main_nav_item"><a href="#">Acerca de Nosotros</a></li>
 							<li class="main_nav_item"><a href="courses.html">Cursos</a></li>
-							<li class="main_nav_item"><a href="styles/elements.html">Recursos</a></li>
+							<li class="main_nav_item"><a href="elements.html">Recursos</a></li>
 							<li class="main_nav_item"><a href="contact.html">contacto</a></li>
 						</div>
 
@@ -75,137 +86,128 @@
 
 	</header>
 
+	<div class="limiter" style="margin-top: 10%;">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<table data-vertable="ver1">
+						<thead>
+						<tr class="row100 head">
+							<th class="column100 column1" data-column="column1">ID</th>
+							<th class="column100 column2" data-column="column2">Nivel</th>
+							<th class="column100 column3" data-column="column3">Día</th>
+							<th class="column100 column4" data-column="column4">Horario</th>
+							<th class="column100 column5" data-column="column5">Disponibilidad</th>
+							<th class="column100 column6" data-column="column6">Ver más</th>
+						</tr>
+						</thead>
 
-	<div class="register">
+						<tbody>
+						<tr class="row100">
+							<td class="column100 column1" data-column="column1" id="head1" >1</td>
+							<td class="column100 column2" data-column="column2" id="t1">Principiante</td>
+							<td class="column100 column3" data-column="column3" id="t1_1">Lunes</td>
+							<td class="column100 column4" data-column="column4" id="t1_2">6:00 p.m. a 9:00 p.m.</td>
+							<td class="column100 column5" data-column="column5" >
+								<p id="btnMatricula" class="test">Matricular</p>
+								<p id="matricula1" style="color:#677c68; text-align: center; display: none;">Se ha reservado un cupo durante 24 horas.</p>
+								<p id="mat1" class="test" style="display: none;">Ver métodos de pago</p>
+							</td>
+							<td class="column100 column6" data-column="column6" id="btnVer"><p class="test">+</p></td>
+						</tr>
 
-		<div class="container-fluid">
+						<tr class="row100">
+							<td class="column100 column1" data-column="column1" id="head2">2</td>
+							<td class="column100 column2" data-column="column2" id="t2">Intermedio</td>
+							<td class="column100 column3" data-column="column3" id="t2_1">Martes</td>
+							<td class="column100 column4" data-column="column4" id="t2_2">6:00 p.m. a 9:00 p.m.</td>
+							<td class="column100 column5" data-column="column5">
+								<p id="btnMatricula2" class="test">Matricular</p>
+								<p id="matricula2" style="color:#677c68; text-align: center; display: none;">Se ha reservado un cupo durante 24 horas.</p>
+								<p id="mat2" class="test" style="display: none;">Ver métodos de pago</p>
+							</td>
+							<td class="column100 column6" data-column="column6" id="btnVer2"><p class="test">+</p></td>
+						</tr>
 
-			<div class="row row-eq-height">
+						<tr class="row100">
+							<td class="column100 column1" data-column="column1" id="head3">3</td>
+							<td class="column100 column2" data-column="column2" id="t3">Intermedio</td>
+							<td class="column100 column3" data-column="column3" id="t3_1">Sábados</td>
+							<td class="column100 column4" data-column="column4" id="t3_2">8:00 p.m. a 1:00 p.m.</td>
+							<td class="column100 column5" data-column="column5">
+								<p id="btnMatricula3" class="test">Matricular</p>
+								<p id="matricula3" style="color:#677c68; text-align: center; display: none;">Se ha reservado un cupo durante 24 horas.</p>
+								<p id="mat3" class="test" style="display: none;">Ver métodos de pago</p>
+							</td>
+							<td class="column100 column6" data-column="column6" id="btnVer3"><p class="test">+</p></td>
+						</tr>
 
-				<div class="col-lg-12 nopadding">
+						</tbody>
+					</table>
 
-					<!-- Search -->
+					<!-- Sección para mostrar información del curso -->
+					<div class="fondo_transparente3">
+						<div class="modal3">
 
-					<div class="search_section d-flex flex-column align-items-center justify-content-center" style="margin-top: 15%">
-						<div class="search_background" style="background-image:url(images/Owl.jpg);"></div>
-						<div class="search_content text-center">
-							<h1 class="search_title">Cursos Disponibles</h1>
-
-							<table class="table table-responsive" style="background-color: rgba(0,0,0,0.10); color: #677c68">
-								<thead>
-								<tr>
-									<th scope="col">Id</th>
-									<th scope="col">Nombre - Horario</th>
-									<th scope="col">Disponibilidad</th>
-									<th scope="col">Más</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<th scope="row" id="head1">1</th>
-									<td id="uno">Intermedio <br> Lunes (6:00 p.m. a 9:00 p.m.)</td>
-									<td>
-										<a href="#" id="btnMatricula" class="boton test">Matricular</a>
-										<p id="matricula1" style="display: none; color: #677c68">Cupo Reservado</p>
-										<a href="#" style="display: none" id="mat1" class="mat2 enlace_info_pago">Ver métodos de pago</a>
-									</td>
-									<td>
-										<a href="#" id="btnVer" class="boton">+</a>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row" id="head2">2</th>
-									<td id="dos">Intermedio <br> Martes (6:00 p.m. a 9:00 p.m.)</td>
-									<td>
-										<a href="#" id="btnMatricula2" class="boton test">Matricular</a>
-										<p id="matricula2" style="display: none; color: #677c68">Cupo Reservado</p>
-										<a href="#" style="display: none" id="mat2" class="mat2 enlace_info_pago">Ver métodos de pago</a>
-									</td>
-									<td>
-										<a href="#" id="btnVer2" class="boton">+</a>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row" id="head3">3</th>
-									<td id="tres">Principiante <br> Sábado (8:00 a.m. a 11:00 a.m.)</td>
-									<td>
-										<a href="#" id="btnMatricula3" class="boton test">Matricular</a>
-										<p id="matricula3" style="display: none; color: #677c68">Cupo Reservado</p>
-										<a href="#" style="display: none" id="mat3" class="mat2 enlace_info_pago">Ver métodos de pago</a>
-									</td>
-									<td>
-										<a href="#" id="btnVer3" class="boton">+</a>
-									</td>
-								</tr>
-								</tbody>
-							</table>
-
-							<!-- Sección para mostrar información del curso -->
-							<div class="fondo_transparente3">
-								<div class="modal3">
-									<div class="modal_cerrar">
-										<span>x</span>
-									</div>
-									<div class="modal_titulo" id="titulo"></div>
-									<div>
-										<div id="first">
-											<table class="table" style="color: black">
-												<tbody>
-												<tr>
-													<td><p>Duración: </p></td>
-													<td><p>4 meses</p></td>
-												</tr>
-												<tr>
-													<td><p>Costo: </p></td>
-													<td><p id="costo"></p></td>
-												</tr>
-												<tr>
-													<td colspan="2"><p id="descripcion"></p></td>
-												</tr>
-											</table>
-										</div>
-									</div>
-								</div>
+							<div class="modal_cerrar">
+								<span>x</span>
 							</div>
 
-							<!-- Sección para reservar cupo del curso -->
-							<div class="fondo_transparente4">
-								<div class="modal4">
-									<div class="modal_cerrar">
-										<span>x</span>
-									</div>
-									<div class="modal_titulo" id="tituloMatricula"></div>
-									<div>
-										<div id="seccond" style="margin-bottom: 5%">
-											<p>Se reservará su cupo por 24 horas.
-												<br>La matricula de este curso será válida hasta que se verifique el pago.</p>
-											<a href="#" id="btnConfirmaMatricula" class="boton">Confirmar Matrícula</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Sección para reservar cupo del curso -->
-							<div class="fondo_transparente5">
-								<div class="modal5">
-									<div class="modal_cerrar">
-										<span>x</span>
-									</div>
-									<div class="modal_titulo">Métodos de Pago</div>
-									<div>
-										<div id="third" style="margin-bottom: 1%">
-											<p>Banco de Costa Rica: CR9098706540321
-												<br>Banco Nacional: CR1012304560789
-												<br>Sinpe Móvil: 87654321</p>
-										</div>
-									</div>
-								</div>
-							</div>
+							<div class="modal_titulo" id="titulo"></div>
+							<br>
+								<table class="table">
+									<tbody style="margin-left: 10px;">
+									<tr>
+										<td><p class="modalText">Duración: </p></td>
+										<td><p class="modalText">4 meses</p></td>
+									</tr>
+									<tr>
+										<td><p class="modalText">Costo: </p></td>
+										<td><p class="modalText" id="costo"></p></td>
+									</tr>
+									<tr style="text-align: center">
+										<td colspan="2"><p class="modalText" id="descripcion"></p></td>
+									</tr>
+								</table>
 
 						</div>
-
 					</div>
 
+					<!-- Sección para reservar cupo del curso -->
+					<div class="fondo_transparente4">
+						<div class="modal4">
+							<div class="modal_cerrar">
+								<span>x</span>
+							</div>
+							<div class="modal_titulo" id="tituloMatricula"></div>
+							<br>
+							<div>
+								<div id="seccond" style="margin-bottom: 5%">
+									<p class="modalText">Se reservará su cupo por 24 horas.
+										<br>La matricula de este curso será válida hasta que se verifique el pago.</p>
+									<br>
+									<a href="#" id="btnConfirmaMatricula" class="boton">Confirmar Matrícula</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sección para reservar cupo del curso -->
+					<div class="fondo_transparente5">
+						<div class="modal5">
+							<div class="modal_cerrar">
+								<span>x</span>
+							</div>
+							<div class="modal_titulo">Métodos de Pago</div>
+							<div>
+								<div id="third" style="margin-bottom: 1%">
+									<p>Banco de Costa Rica: CR9098706540321
+										<br>Banco Nacional: CR1012304560789
+										<br>Sinpe Móvil: 87654321</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</div>
@@ -213,22 +215,15 @@
 	</div>
 
 	<!-- Footer -->
-
 	<footer class="footer">
+
 		<div class="container">
-
-			<!-- Footer Content -->
-
-			<div class="footer_content">
-
-			</div>
-
 			<!-- Footer Copyright -->
 
 			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
 				<div class="footer_copyright">
 					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script></span>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> </span>
 				</div>
 				<div class="footer_social ml-sm-auto">
 					<ul class="menu_social">
@@ -239,6 +234,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></span
 			</div>
 
 		</div>
+
 	</footer>
 
 </div>
@@ -255,43 +251,59 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></span
 <script src="plugins/easing/easing.js"></script>
 <script src="js/courses_custom.js"></script>
 
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+<!--===============================================================================================-->
+
 <script>
-	let uno = document.getElementById("uno");
-	let dos = document.getElementById("dos");
-	let tres = document.getElementById("tres");
+	let t1 = document.getElementById("t1");
+	let t1_1 = document.getElementById("t1_1");
+	let t1_2 = document.getElementById("t1_2");
+
+	let t2 = document.getElementById("t2");
+	let t2_1 = document.getElementById("t2_1");
+	let t2_2 = document.getElementById("t2_2");
+
+	let t3 = document.getElementById("t3");
+	let t3_1 = document.getElementById("t3_1");
+	let t3_2 = document.getElementById("t3_2");
 
 	//MÉTODOS DEL MODAL DE LA INFORMACIÓN DEL CURSO
+
+	document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparente3")[0].style.display="none"
+	})
+
 	document.getElementById("btnVer").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente3")[0].style.display="block"
-		document.getElementById("titulo").innerHTML=uno.innerHTML
-		document.getElementById("costo").innerHTML='₡ 120,000.00'
-		document.getElementById("descripcion").innerHTML='Curso de nivel intermedio.'
+		document.getElementById("titulo").innerHTML= t1.innerHTML + '  -  (' + t1_1.innerHTML + ' ' + t1_2.innerHTML + ')'
+		document.getElementById("costo").innerHTML='₡ 90,000.00'
+		document.getElementById("descripcion").innerHTML='Curso de nivel principiante.'
 		return false
 	})
 	document.getElementById("btnVer2").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente3")[0].style.display="block"
-		document.getElementById("titulo").innerHTML=dos.innerHTML
+		document.getElementById("titulo").innerHTML= t2.innerHTML + '  -  (' + t2_1.innerHTML + ' ' + t2_2.innerHTML + ')'
 		document.getElementById("costo").innerHTML='₡ 120,000.00'
 		document.getElementById("descripcion").innerHTML='Curso de nivel intermedio.'
 		return false
 	})
 	document.getElementById("btnVer3").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparente3")[0].style.display="block"
-		document.getElementById("titulo").innerHTML=tres.innerHTML
-		document.getElementById("costo").innerHTML='₡ 90,000.00'
-		document.getElementById("descripcion").innerHTML='Curso de nivel principiante.'
+		document.getElementById("titulo").innerHTML= t3.innerHTML + '  -  (' + t3_1.innerHTML + ' ' + t3_2.innerHTML + ')'
+		document.getElementById("costo").innerHTML='₡ 120,000.00'
+		document.getElementById("descripcion").innerHTML='Curso de nivel intermedio.'
 		return false
 	})
 
-	document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", function (){
-		document.getElementsByClassName("fondo_transparente3")[0].style.display="none"
-	})
 
-
-
-	var head1 = document.getElementById("head1");
-	var head2 = document.getElementById("head2");
-	var head3 = document.getElementById("head3");
 
 	//MÉTODOS DEL MODAL DE LA MATRICULA
 	document.getElementById("btnMatricula").addEventListener("click", function (){
