@@ -668,7 +668,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: #EAD1C5;
+	background: #fff;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -957,10 +957,10 @@ section
 }
 .loader_sub
 {
-	font-size: 15px;
+	font-size: 25px;
 	font-weight: 400;
 	color: #a5a5a5;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 /*********************************

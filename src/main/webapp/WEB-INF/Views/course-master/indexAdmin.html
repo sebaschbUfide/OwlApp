@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Página Principal Profesor</title>
+<title>Página Principal Administrador</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Course Project">
@@ -81,7 +81,7 @@
 	</header>
 
 	<!-- ADMIN USERS -->
-	<div id="adminUsers" class="limiter" style="margin-top: 13%; display: none">
+	<div id="adminUsers" class="limiter" style="margin-top: 13%; display: block">
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100 ver1 m-b-110">
@@ -977,7 +977,7 @@
 
 
 	<!-- ADMIN COURSES -->
-	<div id="adminCourse" class="limiter" style="margin-top: 13%; display: block">
+	<div id="adminCourse" class="limiter" style="margin-top: 13%; display: none">
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100 ver1 m-b-110">
@@ -988,190 +988,404 @@
 
 					<br>
 
-					<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0px 10px 0px 10px">
-
-						<nav class="navbar navbar-dark ">
-							<p style="font-size: xx-large; font-weight: bold; color: #677c68">Intermedio SC-603</p>
-						</nav>
-
-						<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
-							<thead>
-							<tr>
-								<th style="text-align: center" scope="col" colspan="2">Descripción</th>
-								<th style="text-align: center" scope="col">Costo</th>
-								<th style="text-align: center" scope="col">Duración (meses)</th>
-							</tr>
-							</thead>
-							<tbody>
-							<tr style="text-align: center;">
-								<td style="padding: 5px 0;" colspan="2">En este curso se presentan temas como...</td>
-								<td style="padding: 5px 0;">₡ 120,000</td>
-								<td style="padding: 5px 0;">6 meses</td>
-							</tr>
-							</tbody>
-						</table>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a style="color: black; font-size: medium; font-weight: bold" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  >
+									Intermedio 1 (SC-603)
+								</a>
+							</h4>
+						</div>
 						<br>
-						<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0 5px 5px 5px">
+						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
 
-							<nav class="navbar navbar-dark ">
-								<p style="font-size: xx-large; color: #677c68">Horarios</p>
-								<form class="form-inline">
-									<a href="#" id="createSchedule" class="boton edit">+</a>
-								</form>
-							</nav>
+								<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0px 10px 0px 10px">
 
-							<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
-								<thead>
-								<tr>
-									<th style="text-align: center" scope="col">Día</th>
-									<th style="text-align: center" scope="col">Horario</th>
-									<th style="text-align: center" scope="col" colspan="2">Acciones</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr style="text-align: center;">
-									<td style="padding: 5px 0;">Lunes</td>
-									<td style="padding: 5px 0;">6:00 p.m. a 9:00 p.m.</td>
-									<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
-									<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
-								</tr>
-								<tr style="text-align: center;">
-									<td style="padding: 5px 0;">Martes</td>
-									<td style="padding: 5px 0;">6:00 p.m. a 9:00 p.m.</td>
-									<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
-									<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
-								</tr>
-								</tbody>
-							</table>
-
-						</div>
-
-						<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0 5px 5px 5px">
-
-							<nav class="navbar navbar-dark ">
-								<p style="font-size: xx-large; color: #677c68">Módulos</p>
-								<form class="form-inline">
-									<a href="#" id="createModule" class="boton edit">+ Agregar Nuevo Módulo</a>
-								</form>
-							</nav>
-
-							<div style="margin-bottom: 5px;" class="dropdownMenu">
-								<div class="title dropdownButton">
-									<p class="tittle_text">Intermedio Nivel 1</p>
-								</div>
-								<div class="dropdownContent">
-
-									<nav class="navbar navbar-dark" style="padding: 0 5px">
-										<p style="font-size: medium; color: #677c68;">Descripción...</p>
-										<form class="form-inline">
-											<a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a>
-										</form>
-									</nav>
-
-									<nav class="navbar navbar-dark">
-										<p style="font-size: medium; color: #677c68; font-weight: bold">Evaluaciones</p>
-										<a href="#" id="addTest1" class="enlace_actions"><i class="fas fa-plus"></i></a>
-									</nav>
-
-									<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+									<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68; margin-top: 1%;">
 										<thead>
 										<tr>
-											<th style="text-align: center" scope="col">Id Prueba</th>
-											<th style="text-align: center" scope="col">Semana</th>
-											<th style="text-align: center" scope="col">Inicio</th>
-											<th style="text-align: center" scope="col">Finalización</th>
-											<th style="text-align: center" scope="col">Nota Mínima</th>
-											<th style="text-align: center" scope="col">Estado</th>
-											<th style="text-align: center" scope="col" colspan="2">Aciones</th>
+											<th style="text-align: center" scope="col" colspan="2">Descripción</th>
+											<th style="text-align: center" scope="col">Costo</th>
+											<th style="text-align: center" scope="col">Duración (meses)</th>
+											<th style="text-align: center" scope="col" colspan="2">Acciones</th>
 										</tr>
 										</thead>
 										<tbody>
 										<tr style="text-align: center;">
-											<td style="padding: 5px 0;">PE-001</td>
-											<td style="padding: 5px 0;">17-23/Abr</td>
-											<td style="padding: 5px 0;">6:10 p.m.</td>
-											<td style="padding: 5px 0;">8:30 p.m.</td>
-											<td style="padding: 5px 0;">70</td>
-											<td style="padding: 5px 0;">Activo</td>
-											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
-											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
-										</tr>
-										<tr style="text-align: center;">
-											<td style="padding: 5px 0;">PE-002</td>
-											<td style="padding: 5px 0;">11-17/Ago</td>
-											<td style="padding: 5px 0;">6:10 p.m.</td>
-											<td style="padding: 5px 0;">8:30 p.m.</td>
-											<td style="padding: 5px 0;">70</td>
-											<td style="padding: 5px 0;">Activo</td>
-											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+											<td style="padding: 5px 0;" colspan="2">En este curso se presentan temas como...</td>
+											<td style="padding: 5px 0;">₡ 120,000</td>
+											<td style="padding: 5px 0;">6 meses</td>
+											<td style="padding: 5px 0;"><a id="btnEditCourse" href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
 											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
 										</tr>
 										</tbody>
 									</table>
 
+									<br>
+
+									<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0 5px 5px 5px">
+
+										<nav class="navbar navbar-dark ">
+											<p style="font-size: xx-large; color: #677c68">Horarios</p>
+											<form class="form-inline">
+												<a href="#" id="createSchedule" class="boton edit">+</a>
+											</form>
+										</nav>
+
+										<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+											<thead>
+											<tr>
+												<th style="text-align: center" scope="col">Día</th>
+												<th style="text-align: center" scope="col">Horario</th>
+												<th style="text-align: center" scope="col" colspan="2">Acciones</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr style="text-align: center;">
+												<td style="padding: 5px 0;">Lunes</td>
+												<td style="padding: 5px 0;">6:00 p.m. a 9:00 p.m.</td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+											</tr>
+											<tr style="text-align: center;">
+												<td style="padding: 5px 0;">Martes</td>
+												<td style="padding: 5px 0;">6:00 p.m. a 9:00 p.m.</td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+											</tr>
+											</tbody>
+										</table>
+
+									</div>
+
+									<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0 5px 5px 5px">
+
+										<nav class="navbar navbar-dark ">
+											<p style="font-size: xx-large; color: #677c68">Módulos</p>
+											<form class="form-inline">
+												<a href="#" id="createModule" class="boton edit">+ Agregar Nuevo Módulo</a>
+											</form>
+										</nav>
+
+										<div style="margin-bottom: 5px;" class="dropdownMenu">
+											<div class="title dropdownButton">
+												<p class="tittle_text">Intermedio Nivel 1</p>
+											</div>
+											<div class="dropdownContent">
+
+												<nav class="navbar navbar-dark" style="padding: 0 5px">
+													<p style="font-size: medium; color: #677c68;">Descripción...</p>
+													<form class="form-inline">
+														<a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+														<a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a>
+													</form>
+												</nav>
+
+												<nav class="navbar navbar-dark">
+													<p style="font-size: medium; color: #677c68; font-weight: bold">Evaluaciones</p>
+													<a href="#" id="addTest1" class="enlace_actions"><i class="fas fa-plus"></i></a>
+												</nav>
+
+												<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+													<thead>
+													<tr>
+														<th style="text-align: center" scope="col">Id Prueba</th>
+														<th style="text-align: center" scope="col">Semana</th>
+														<th style="text-align: center" scope="col">Inicio</th>
+														<th style="text-align: center" scope="col">Finalización</th>
+														<th style="text-align: center" scope="col">Nota Mínima</th>
+														<th style="text-align: center" scope="col">Estado</th>
+														<th style="text-align: center" scope="col" colspan="2">Aciones</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-001</td>
+														<td style="padding: 5px 0;">17-23/Abr</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-002</td>
+														<td style="padding: 5px 0;">11-17/Ago</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													</tbody>
+												</table>
+
+											</div>
+										</div>
+
+										<div class="dropdownMenu">
+											<div class="title dropdownButton">
+												<p class="tittle_text">Intermedio Nivel 2</p>
+											</div>
+											<div class="dropdownContent">
+
+												<nav class="navbar navbar-dark" style="padding: 0 5px">
+													<p style="font-size: medium; color: #677c68;">Descripción...</p>
+													<form class="form-inline">
+														<a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+														<a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a>
+													</form>
+												</nav>
+
+												<nav class="navbar navbar-dark">
+													<p style="font-size: medium; color: #677c68; font-weight: bold">Evaluaciones</p>
+													<a href="#" id="addTest2" class="enlace_actions"><i class="fas fa-plus"></i></a>
+												</nav>
+
+												<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+													<thead>
+													<tr>
+														<th style="text-align: center" scope="col">Id Prueba</th>
+														<th style="text-align: center" scope="col">Semana</th>
+														<th style="text-align: center" scope="col">Inicio</th>
+														<th style="text-align: center" scope="col">Finalización</th>
+														<th style="text-align: center" scope="col">Nota Mínima</th>
+														<th style="text-align: center" scope="col">Estado</th>
+														<th style="text-align: center" scope="col" colspan="2">Aciones</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-001</td>
+														<td style="padding: 5px 0;">17-23/Abr</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-002</td>
+														<td style="padding: 5px 0;">11-17/Ago</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													</tbody>
+												</table>
+
+											</div>
+										</div>
+
+									</div>
+
 								</div>
+
 							</div>
-							<div class="dropdownMenu">
-								<div class="title dropdownButton">
-									<p class="tittle_text">Intermedio Nivel 2</p>
-								</div>
-								<div class="dropdownContent">
+						</div>
+					</div>
 
-									<nav class="navbar navbar-dark" style="padding: 0 5px">
-										<p style="font-size: medium; color: #677c68;">Descripción...</p>
-										<form class="form-inline">
-											<a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a>
-										</form>
-									</nav>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title">
+								<a style="color: black; font-size: medium; font-weight: bold" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Intermedio 2 (SC-605)
+								</a>
+							</h4>
+						</div>
+						<br>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="panel-body">
+								<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0px 10px 0px 10px">
 
-									<nav class="navbar navbar-dark">
-										<p style="font-size: medium; color: #677c68; font-weight: bold">Evaluaciones</p>
-										<a href="#" id="addTest2" class="enlace_actions"><i class="fas fa-plus"></i></a>
-									</nav>
-
-									<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+									<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68; margin-top: 1%;">
 										<thead>
 										<tr>
-											<th style="text-align: center" scope="col">Id Prueba</th>
-											<th style="text-align: center" scope="col">Semana</th>
-											<th style="text-align: center" scope="col">Inicio</th>
-											<th style="text-align: center" scope="col">Finalización</th>
-											<th style="text-align: center" scope="col">Nota Mínima</th>
-											<th style="text-align: center" scope="col">Estado</th>
-											<th style="text-align: center" scope="col" colspan="2">Aciones</th>
+											<th style="text-align: center" scope="col" colspan="2">Descripción</th>
+											<th style="text-align: center" scope="col">Costo</th>
+											<th style="text-align: center" scope="col">Duración (meses)</th>
 										</tr>
 										</thead>
 										<tbody>
 										<tr style="text-align: center;">
-											<td style="padding: 5px 0;">PE-001</td>
-											<td style="padding: 5px 0;">17-23/Abr</td>
-											<td style="padding: 5px 0;">6:10 p.m.</td>
-											<td style="padding: 5px 0;">8:30 p.m.</td>
-											<td style="padding: 5px 0;">70</td>
-											<td style="padding: 5px 0;">Activo</td>
-											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
-											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
-										</tr>
-										<tr style="text-align: center;">
-											<td style="padding: 5px 0;">PE-002</td>
-											<td style="padding: 5px 0;">11-17/Ago</td>
-											<td style="padding: 5px 0;">6:10 p.m.</td>
-											<td style="padding: 5px 0;">8:30 p.m.</td>
-											<td style="padding: 5px 0;">70</td>
-											<td style="padding: 5px 0;">Activo</td>
-											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
-											<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+											<td style="padding: 5px 0;" colspan="2">En este curso se presentan temas como...</td>
+											<td style="padding: 5px 0;">₡ 120,000</td>
+											<td style="padding: 5px 0;">6 meses</td>
 										</tr>
 										</tbody>
 									</table>
+									<br>
+									<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0 5px 5px 5px">
+
+										<nav class="navbar navbar-dark ">
+											<p style="font-size: xx-large; color: #677c68">Horarios</p>
+											<form class="form-inline">
+												<a href="#" id="createSchedule1" class="boton edit">+</a>
+											</form>
+										</nav>
+
+										<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+											<thead>
+											<tr>
+												<th style="text-align: center" scope="col">Día</th>
+												<th style="text-align: center" scope="col">Horario</th>
+												<th style="text-align: center" scope="col" colspan="2">Acciones</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr style="text-align: center;">
+												<td style="padding: 5px 0;">Lunes</td>
+												<td style="padding: 5px 0;">6:00 p.m. a 9:00 p.m.</td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+											</tr>
+											<tr style="text-align: center;">
+												<td style="padding: 5px 0;">Martes</td>
+												<td style="padding: 5px 0;">6:00 p.m. a 9:00 p.m.</td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+												<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+											</tr>
+											</tbody>
+										</table>
+
+									</div>
+
+									<div class="jumbotron" style="background-color: #fff; border: 2px solid #677c68; padding: 0 5px 5px 5px">
+
+										<nav class="navbar navbar-dark ">
+											<p style="font-size: xx-large; color: #677c68">Módulos</p>
+											<form class="form-inline">
+												<a href="#" id="createModule1" class="boton edit">+ Agregar Nuevo Módulo</a>
+											</form>
+										</nav>
+
+										<div style="margin-bottom: 5px;" class="dropdownMenu">
+											<div class="title dropdownButton">
+												<p class="tittle_text">Intermedio Nivel 1</p>
+											</div>
+											<div class="dropdownContent">
+
+												<nav class="navbar navbar-dark" style="padding: 0 5px">
+													<p style="font-size: medium; color: #677c68;">Descripción...</p>
+													<form class="form-inline">
+														<a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+														<a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a>
+													</form>
+												</nav>
+
+												<nav class="navbar navbar-dark">
+													<p style="font-size: medium; color: #677c68; font-weight: bold">Evaluaciones</p>
+													<a href="#" id="addTest3" class="enlace_actions"><i class="fas fa-plus"></i></a>
+												</nav>
+
+												<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+													<thead>
+													<tr>
+														<th style="text-align: center" scope="col">Id Prueba</th>
+														<th style="text-align: center" scope="col">Semana</th>
+														<th style="text-align: center" scope="col">Inicio</th>
+														<th style="text-align: center" scope="col">Finalización</th>
+														<th style="text-align: center" scope="col">Nota Mínima</th>
+														<th style="text-align: center" scope="col">Estado</th>
+														<th style="text-align: center" scope="col" colspan="2">Aciones</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-001</td>
+														<td style="padding: 5px 0;">17-23/Abr</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-002</td>
+														<td style="padding: 5px 0;">11-17/Ago</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													</tbody>
+												</table>
+
+											</div>
+										</div>
+										<div class="dropdownMenu">
+											<div class="title dropdownButton">
+												<p class="tittle_text">Intermedio Nivel 2</p>
+											</div>
+											<div class="dropdownContent">
+
+												<nav class="navbar navbar-dark" style="padding: 0 5px">
+													<p style="font-size: medium; color: #677c68;">Descripción...</p>
+													<form class="form-inline">
+														<a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+														<a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a>
+													</form>
+												</nav>
+
+												<nav class="navbar navbar-dark">
+													<p style="font-size: medium; color: #677c68; font-weight: bold">Evaluaciones</p>
+													<a href="#" id="addTest4" class="enlace_actions"><i class="fas fa-plus"></i></a>
+												</nav>
+
+												<table data-vertable="ver1" style="background-color: rgba(0,0,0,0.10); color: #677c68">
+													<thead>
+													<tr>
+														<th style="text-align: center" scope="col">Id Prueba</th>
+														<th style="text-align: center" scope="col">Semana</th>
+														<th style="text-align: center" scope="col">Inicio</th>
+														<th style="text-align: center" scope="col">Finalización</th>
+														<th style="text-align: center" scope="col">Nota Mínima</th>
+														<th style="text-align: center" scope="col">Estado</th>
+														<th style="text-align: center" scope="col" colspan="2">Aciones</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-001</td>
+														<td style="padding: 5px 0;">17-23/Abr</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													<tr style="text-align: center;">
+														<td style="padding: 5px 0;">PE-002</td>
+														<td style="padding: 5px 0;">11-17/Ago</td>
+														<td style="padding: 5px 0;">6:10 p.m.</td>
+														<td style="padding: 5px 0;">8:30 p.m.</td>
+														<td style="padding: 5px 0;">70</td>
+														<td style="padding: 5px 0;">Activo</td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Editar  <i class="fas fa-edit"></i></a></td>
+														<td style="padding: 5px 0;"><a href="#" class="enlace_actions">Remover  <i class="fas fa-trash-alt"></i></a></td>
+													</tr>
+													</tbody>
+												</table>
+
+											</div>
+										</div>
+
+									</div>
 
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 
 				</div>
@@ -1328,6 +1542,7 @@
 		document.getElementById("adminUsers").style.display="block"
 		document.getElementById("createUsers").style.display="none"
 		document.getElementById("adminTest").style.display="none"
+		document.getElementById("adminCourse").style.display="none"
 		return false
 	})
 
@@ -1417,6 +1632,11 @@
 	})
 
 	document.getElementById("btnCreateCourse").addEventListener("click", function (){
+		document.getElementsByClassName("fondo_transparenteCourse")[0].style.display="block"
+		return false
+	})
+
+	document.getElementById("btnEditCourse").addEventListener("click", function (){
 		document.getElementsByClassName("fondo_transparenteCourse")[0].style.display="block"
 		return false
 	})
